@@ -268,7 +268,8 @@ function submitCareerForm() {
     const p = document.createElement('div');
     p.className = 'why-particle';
     const size = Math.random() * 6 + 3;
-    p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*100}%;top:${Math.random()*100}%;animation-duration:${Math.random()*6+5}s;animation-delay:${Math.random()*4}s;opacity:${Math.random()*.4+.1};`;
+    // Fix applied here: changed * 100 to * 95
+    p.style.cssText = `width:${size}px;height:${size}px;left:${Math.random()*95}%;top:${Math.random()*100}%;animation-duration:${Math.random()*6+5}s;animation-delay:${Math.random()*4}s;opacity:${Math.random()*.4+.1};`;
     whySec.appendChild(p);
   }
 })();
