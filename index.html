@@ -374,7 +374,7 @@
     (function () {
       if (window.innerWidth < 768) return;
       const canvas = document.getElementById('hero-canvas');
-      if (!canvas) return;
+      if (!canvas || !window.THREE || !canvas.getContext('webgl')) return;
       const renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: true, powerPreference: 'low-power' });
       renderer.setPixelRatio(1);
       const scene = new THREE.Scene();
