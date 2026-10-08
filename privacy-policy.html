@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – VGS Geotechnical Services</title>
+  <meta name="description" content="Read the Privacy Policy of Vindhyan Geotechnical Services. Learn how we collect, use, and protect your personal information.">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── LEGAL PAGE SPECIFIC ── */
+    .legal-hero {
+      background: linear-gradient(160deg, #0d2146 0%, #0a1a38 50%, #071230 100%);
+      padding: 7rem 4rem 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .legal-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,.045) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .legal-hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+    }
+    .legal-breadcrumb {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: .72rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.45);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+    }
+    .legal-breadcrumb a { color: rgba(255,255,255,.45); text-decoration: none; transition: color .2s; }
+    .legal-breadcrumb a:hover { color: var(--accent); }
+    .legal-breadcrumb span { color: rgba(255,255,255,.2); }
+    .legal-hero h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      letter-spacing: 2px;
+      color: white;
+      line-height: 1;
+      margin-bottom: .8rem;
+    }
+    .legal-hero h1 span { color: var(--accent); }
+    .legal-hero-meta {
+      font-size: .82rem;
+      color: rgba(255,255,255,.45);
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .legal-hero-meta span { display: flex; align-items: center; gap: .4rem; }
+
+    /* Main content */
+    .legal-body {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 4rem 2rem 6rem;
+    }
+    .legal-toc {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent);
+      padding: 1.8rem 2rem;
+      margin-bottom: 3.5rem;
+    }
+    .legal-toc h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: .72rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .legal-toc ol {
+      padding-left: 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: .45rem;
+    }
+    .legal-toc ol li a {
+      font-size: .87rem;
+      color: var(--text-mid);
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .legal-toc ol li a:hover { color: var(--accent); }
+
+    .legal-section {
+      margin-bottom: 3rem;
+      scroll-margin-top: 100px;
+    }
+    .legal-section h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--navy);
+      margin-bottom: 1rem;
+      padding-bottom: .7rem;
+      border-bottom: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+    }
+    .legal-section h2 .sec-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.4rem;
+      color: var(--accent);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .legal-section p {
+      font-size: .93rem;
+      color: var(--text-mid);
+      line-height: 1.9;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+    .legal-section ul, .legal-section ol {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .legal-section ul li, .legal-section ol li {
+      font-size: .92rem;
+      color: var(--text-mid);
+      line-height: 1.8;
+      margin-bottom: .4rem;
+      font-weight: 300;
+    }
+    .legal-section strong { color: var(--navy); font-weight: 600; }
+    .legal-highlight {
+      background: rgba(30,92,190,.05);
+      border: 1px solid rgba(30,92,190,.15);
+      border-radius: 2px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .legal-highlight p { margin: 0; font-size: .88rem; }
+    .legal-contact-box {
+      background: var(--navy);
+      padding: 2.5rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+    .legal-contact-box h3 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.6rem;
+      letter-spacing: 2px;
+      color: white;
+      margin-bottom: .5rem;
+    }
+    .legal-contact-box p { font-size: .9rem; color: rgba(255,255,255,.6); margin-bottom: 1.5rem; }
+    .legal-contact-box a {
+      display: inline-block;
+      background: var(--accent);
+      color: white;
+      padding: .8rem 2rem;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: .8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background .3s, transform .2s;
+    }
+    .legal-contact-box a:hover { background: white; color: var(--navy); transform: translateY(-2px); }
+
+    @media (max-width: 768px) {
+      .legal-hero { padding: 6rem 1.5rem 3rem; }
+      .legal-body { padding: 2.5rem 1.5rem 4rem; }
+      .legal-toc { padding: 1.2rem; }
+    }
+  </style>
+  <link rel="icon" href="vgs_logo.png" type="image/png">
+</head>
+
+<body>
+  <!-- MOBILE OVERLAY & DRAWER -->
+  <div class="mobile-overlay" id="mobileOverlay" onclick="closeMobile()"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <div class="mobile-menu-logo"><span>VGS</span> GEO</div>
+      <button class="mobile-menu-close" onclick="closeMobile()">✕</button>
+    </div>
+    <a href="index.html" onclick="closeMobile()"><span class="m-ico"><svg class="svg-icon" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span> Home</a>
+    <a href="about.html" onclick="closeMobile()"><span class="m-ico"><svg class="svg-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span> About</a>
+    <a href="services.html" onclick="closeMobile()"><span class="m-ico"><svg class="svg-icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span> Services</a>
+    <a href="gallery.html" onclick="closeMobile()"><span class="m-ico"><svg class="svg-icon" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></span> Gallery</a>
+    <a href="contact.html" onclick="closeMobile()"><span class="m-ico"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span> Contact</a>
+    <div class="mobile-menu-sub">vindhyangeotech@gmail.com<br>+91 98341 18628</div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo" aria-label="VGS Geotechnical Home">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 42 42'%3E%3Crect width='42' height='42' fill='%230d2146'/%3E%3Ctext x='21' y='28' font-family='Arial' font-weight='bold' font-size='16' fill='%23c8541a' text-anchor='middle'%3EVGS%3C/text%3E%3C/svg%3E" alt="VGS Logo" style="height:42px;width:auto;display:block;">
+    </a>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <section class="legal-hero">
+    <div class="legal-hero-inner">
+      <div class="legal-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        Privacy Policy
+      </div>
+      <h1>Privacy <span>Policy</span></h1>
+      <div class="legal-hero-meta">
+        <span><svg class="svg-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg> Last Updated: April 2026</span>
+        <span><svg class="svg-icon" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Effective: April 1, 2026</span>
+        <span><svg class="svg-icon" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> GDPR Compliant</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main style="background: var(--bg);">
+    <div class="legal-body">
+
+      <div class="legal-highlight">
+        <p>At <strong>Vindhyan Geotechnical Services (VGS)</strong>, we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or engage our services. Please read this policy carefully. If you disagree with its terms, please discontinue use of the site.</p>
+      </div>
+
+      <!-- Table of Contents -->
+      <div class="legal-toc">
+        <h3>Table of Contents</h3>
+        <ol>
+          <li><a href="#info-collect">Information We Collect</a></li>
+          <li><a href="#how-use">How We Use Your Information</a></li>
+          <li><a href="#sharing">Sharing of Information</a></li>
+          <li><a href="#cookies-policy">Cookies & Tracking</a></li>
+          <li><a href="#data-retention">Data Retention</a></li>
+          <li><a href="#your-rights">Your Rights</a></li>
+          <li><a href="#security">Data Security</a></li>
+          <li><a href="#children">Children's Privacy</a></li>
+          <li><a href="#changes">Changes to This Policy</a></li>
+          <li><a href="#contact-privacy">Contact Us</a></li>
+        </ol>
+      </div>
+
+      <!-- Section 1 -->
+      <div class="legal-section" id="info-collect">
+        <h2><span class="sec-num">01</span> Information We Collect</h2>
+        <p>We collect information you provide directly to us and information collected automatically when you interact with our website.</p>
+        <p><strong>Information You Provide:</strong></p>
+        <ul>
+          <li>Name, email address, phone number, and company name when you submit our contact or quote request form</li>
+          <li>Project details, location, and service requirements you share with us</li>
+          <li>Résumés, cover letters, and other employment-related information if you apply for a position</li>
+          <li>Communications and correspondence you send to us via email or WhatsApp</li>
+        </ul>
+        <p><strong>Information Collected Automatically:</strong></p>
+        <ul>
+          <li>IP address, browser type, operating system, and device information</li>
+          <li>Pages visited, time spent on pages, and referring website</li>
+          <li>Cookie data and similar tracking technologies (see Section 4)</li>
+        </ul>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="legal-section" id="how-use">
+        <h2><span class="sec-num">02</span> How We Use Your Information</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+          <li>To respond to your inquiries and provide quotes or project proposals</li>
+          <li>To deliver geotechnical services you have engaged us for</li>
+          <li>To send service updates, project progress reports, and important notices</li>
+          <li>To process job applications and communicate with candidates</li>
+          <li>To improve our website, services, and user experience</li>
+          <li>To comply with legal obligations and enforce our agreements</li>
+          <li>To protect the security and integrity of our operations</li>
+        </ul>
+        <p>We will <strong>not</strong> use your information for unsolicited marketing purposes without your explicit consent.</p>
+      </div>
+
+      <!-- Section 3 -->
+      <div class="legal-section" id="sharing">
+        <h2><span class="sec-num">03</span> Sharing of Information</h2>
+        <p>VGS does not sell, trade, or rent your personal information to third parties. We may share your information in the following limited circumstances:</p>
+        <ul>
+          <li><strong>Service Providers:</strong> Trusted vendors who assist us with website hosting, analytics, and communication tools, bound by confidentiality agreements</li>
+          <li><strong>Legal Requirements:</strong> When required by law, court order, or governmental authority</li>
+          <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of assets, with notice provided to you</li>
+          <li><strong>Safety:</strong> When we believe disclosure is necessary to prevent physical harm or financial loss</li>
+        </ul>
+      </div>
+
+      <!-- Section 4 -->
+      <div class="legal-section" id="cookies-policy">
+        <h2><span class="sec-num">04</span> Cookies & Tracking</h2>
+        <p>Our website uses cookies and similar tracking technologies to improve your experience. In summary:</p>
+        <ul>
+          <li><strong>Essential Cookies:</strong> Required for basic website functionality</li>
+          <li><strong>Analytics Cookies:</strong> Help us understand how visitors use our site (e.g., Google Analytics)</li>
+          <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+        </ul>
+        <p>You can control cookies through your browser settings. Disabling certain cookies may affect website functionality.</p>
+      </div>
+
+      <!-- Section 5 -->
+      <div class="legal-section" id="data-retention">
+        <h2><span class="sec-num">05</span> Data Retention</h2>
+        <p>We retain personal information for as long as necessary to fulfil the purposes outlined in this policy, unless a longer retention period is required by law.</p>
+        <ul>
+          <li>Contact form submissions: Retained for 3 years or until the business relationship concludes</li>
+          <li>Project-related data: Retained for 7 years for legal and technical record-keeping purposes</li>
+          <li>Job applications: Retained for 12 months; rejected candidates are notified and data deleted thereafter</li>
+          <li>Website analytics data: Retained for 26 months (anonymised)</li>
+        </ul>
+      </div>
+
+      <!-- Section 6 -->
+      <div class="legal-section" id="your-rights">
+        <h2><span class="sec-num">06</span> Your Rights</h2>
+        <p>You have the following rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Right of Access:</strong> Request a copy of the personal data we hold about you</li>
+          <li><strong>Right to Rectification:</strong> Request correction of inaccurate or incomplete data</li>
+          <li><strong>Right to Erasure:</strong> Request deletion of your data where legally permissible</li>
+          <li><strong>Right to Object:</strong> Object to certain types of data processing</li>
+          <li><strong>Right to Portability:</strong> Receive your data in a structured, machine-readable format</li>
+          <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time where processing is based on consent</li>
+        </ul>
+        <p>To exercise any of these rights, contact us at <a href="mailto:vindhyangeotech@gmail.com" style="color:var(--accent);">vindhyangeotech@gmail.com</a>. We will respond within 30 days.</p>
+      </div>
+
+      <!-- Section 7 -->
+      <div class="legal-section" id="security">
+        <h2><span class="sec-num">07</span> Data Security</h2>
+        <p>We implement appropriate technical and organisational measures to protect your personal information against unauthorised access, alteration, disclosure, or destruction. These include:</p>
+        <ul>
+          <li>SSL/TLS encryption for data in transit</li>
+          <li>Access controls limiting data access to authorised personnel only</li>
+          <li>Regular security reviews and updates to our systems</li>
+          <li>Confidentiality training for all staff handling personal data</li>
+        </ul>
+        <p>While we employ robust safeguards, no method of internet transmission or electronic storage is 100% secure. We cannot guarantee absolute security.</p>
+      </div>
+
+      <!-- Section 8 -->
+      <div class="legal-section" id="children">
+        <h2><span class="sec-num">08</span> Children's Privacy</h2>
+        <p>Our website and services are intended for business and professional use and are not directed to individuals under the age of 18. We do not knowingly collect personal information from children. If you believe a child has provided us with their information, please contact us immediately so we can delete it.</p>
+      </div>
+
+      <!-- Section 9 -->
+      <div class="legal-section" id="changes">
+        <h2><span class="sec-num">09</span> Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons. We will notify you of significant changes by updating the "Last Updated" date at the top of this page. We encourage you to review this policy periodically.</p>
+        <p>Your continued use of our website after any changes constitutes acceptance of the updated policy.</p>
+      </div>
+
+      <!-- Section 10 -->
+      <div class="legal-section" id="contact-privacy">
+        <h2><span class="sec-num">10</span> Contact Us</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact our Data Protection Officer:</p>
+        <ul>
+          <li><strong>Company:</strong> Vindhyan Geotechnical Services</li>
+          <li><strong>Address:</strong> L/2/5 Om Shanti Nagar, Nallasopara, Palghar – 401209, Maharashtra, India</li>
+          <li><strong>Email:</strong> <a href="mailto:vindhyangeotech@gmail.com" style="color:var(--accent);">vindhyangeotech@gmail.com</a></li>
+          <li><strong>Phone:</strong> <a href="tel:+919834118628" style="color:var(--accent);">+91 98341 18628</a></li>
+        </ul>
+      </div>
+
+      <div class="legal-contact-box">
+        <h3>Have Questions?</h3>
+        <p>Our team is here to address any privacy concerns you may have.</p>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 60'%3E%3Crect width='120' height='60' fill='%230d2146'/%3E%3Ctext x='60' y='38' font-family='Arial' font-weight='bold' font-size='24' fill='%23c8541a' text-anchor='middle'%3EVGS%3C/text%3E%3C/svg%3E" alt="VGS Logo" style="height:60px;width:auto;display:block;">
+        </div>
+        <p class="footer-tagline">Vindhyan Geotechnical Services — providing trusted soil, rock and foundation engineering across India since 2016.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><span class="f-ico"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>L/2/5 Om Shanti Nagar, Nallasopara, Palghar – 401209</li>
+          <li><a href="tel:+919834118628"><span class="f-ico"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>+91 98341 18628</a></li>
+          <li><a href="mailto:vindhyangeotech@gmail.com"><span class="f-ico"><svg class="svg-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>vindhyangeotech@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Vindhyan Geotechnical Services · All Rights Reserved</p>
+      <div class="footer-bottom-links">
+        <a href="privacy-policy.html">Privacy</a>
+        <a href="mailto:vindhyangeotech@gmail.com">Email</a>
+        <a href="tel:+919834118628">Call</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
